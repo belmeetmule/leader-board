@@ -1,7 +1,78 @@
-body {
-    background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hello{
-    color: red;
+body {
+  background-color: #f7f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+header,
+main {
+  background-color: #f7f8f8;
+  width: 70%;
+  min-width: 375px;
+}
+
+main {
+  display: flex;
+  gap: 50px;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+header {
+  margin-top: 80px;
+}
+
+.left-col,
+.right-col {
+  flex: 1;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+input {
+  margin: 10px;
+  margin-left: 0;
+  padding: 20px;
+  border: 1px solid #d0d0d0;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #595a5b;
+  height: 40px;
+}
+
+button {
+  padding: 5px;
+  font-size: 1.2rem;
+  box-shadow: 5px 5px 3px #000;
+}
+
+button.submit {
+  float: right;
+}
+
+ul {
+  list-style: none;
+  border: 2px solid #000;
+}
+
+.score-list li {
+  height: 35px;
+  padding: 5px;
+}
+
+li:nth-of-type(even) {
+  background-color: #d3d3d3;
 }

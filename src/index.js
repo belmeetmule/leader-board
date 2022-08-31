@@ -1,21 +1,13 @@
-import _ from 'lodash';
-import printMe from './print.js';
+import { scores } from './modules/scores.js';
 import './style.css';
 
-function component() {
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
+function addScore(score) {
+  const list = document.querySelector('.score-list');
+  const li = document.createElement('li');
+  li.innerHTML = `${score.name}: ${score.score}`;
+  list.appendChild(li);
+}
 
-    //Lodash now imported using this script
-    element.innerHTML = _.join(['Hello', 'And what is that!'], ' ');
-    element.classList.add('hello');
-
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
-
-    element.appendChild(btn);
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+scores.forEach((i) => {
+  addScore(i);
+});
