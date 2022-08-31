@@ -78,7 +78,7 @@ npx stylelint "\*_/_.{css,scss}"
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/belmeetmule/portfolio/issues).
+Feel free to check the [issues page](https://github.com/belmeetmule/leader-board/issues).
 
 ## Show your support
 
@@ -87,7 +87,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Thank You [Microverse](www.microverse.org) team.
-- Thanks to everyone who will get time to check this code and suggest any [issues](https://github.com/belmeetmule/hello-world/issues)
+- Thanks to everyone who will get time to check this code and suggest any [issues](https://github.com/belmeetmule/leader-board/issues)
 
 ## 📝 License
 
