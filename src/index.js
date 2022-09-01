@@ -9,7 +9,7 @@ const url = `${baseURL}games/${id}/scores`;
 const ui = new UI();
 const newGame = new Game();
 
-//submit score
+// submit score
 const add = document.querySelector('.submit');
 add.addEventListener('click', (e) => {
   e.preventDefault();
