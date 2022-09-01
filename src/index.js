@@ -9,14 +9,7 @@ const url = `${baseURL}games/${id}/scores`;
 const ui = new UI();
 const newGame = new Game();
 
-/* const gameInfo = newGame.addGame({name: 'Gena'}, `${baseURL}games/`);
-let gameId;
-gameInfo.then((result) => {
-  let theStr = result[Object.keys(result)[0]].split(' ');
-  gameId =  theStr[theStr.length-2]
-  console.log('toString: ' + gameId);
-}); */
-
+//submit score
 const add = document.querySelector('.submit');
 add.addEventListener('click', (e) => {
   e.preventDefault();
