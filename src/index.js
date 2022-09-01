@@ -1,13 +1,9 @@
 import { scores } from './modules/scores.js';
+import UI from './modules/UI';
 import './style.css';
 
-function addScore(score) {
-  const list = document.querySelector('.score-list');
-  const li = document.createElement('li');
-  li.innerHTML = `${score.name}: ${score.score}`;
-  list.appendChild(li);
-}
-
+const update = new UI();
 scores.forEach((i) => {
-  addScore(i);
+  update.refreashBoard(i);
+  //addScore(i);
 });
