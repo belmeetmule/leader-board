@@ -47,4 +47,8 @@ export default class Game {
     }
     return data.result;
   }
+
+  static sortLeaders(gameScores) {
+    return gameScores.sort((a, b) => b.score - a.score);
+  }
 }

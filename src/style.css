@@ -5,25 +5,24 @@
 }
 
 body {
-  background-color: #f7f8f8;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+  background-color: skyblue;
 }
 
 header,
 main {
-  background-color: #f7f8f8;
-  width: 70%;
+  width: 80%;
   min-width: 375px;
 }
 
 main {
   display: flex;
+  flex-direction: column-reverse;
   gap: 50px;
   margin-top: 35px;
-  margin-left: 50px;
 }
 
 header {
@@ -40,6 +39,7 @@ header {
   flex-direction: row;
   margin-bottom: 10px;
   justify-content: space-between;
+  white-space: nowrap;
 }
 
 input {
@@ -53,14 +53,27 @@ input {
   height: 40px;
 }
 
+h1,
+h2 {
+  color: blueviolet;
+}
+
+h1 {
+  text-align: center;
+}
+
 button {
+  background-color: blueviolet;
   padding: 5px;
   font-size: 1.2rem;
   box-shadow: 5px 5px 3px #000;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
 }
 
 button.submit {
-  float: right;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 
 ul {
@@ -70,9 +83,49 @@ ul {
 
 .score-list li {
   height: 35px;
-  padding: 5px;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+li > span:first-child {
+  flex: 1 1 auto;
+}
+
+li > span:last-child {
+  flex: 20 1 auto;
+  text-align: right;
 }
 
 li:nth-of-type(even) {
-  background-color: #d3d3d3;
+  background-color: blueviolet;
+  color: #f7f8f8;
+}
+
+.fa-trophy {
+  color: blueviolet;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin-top: 35px;
+    margin-left: 50px;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  button.submit {
+    margin-left: 0%;
+    float: right;
+    transform: translate(0%);
+  }
 }
