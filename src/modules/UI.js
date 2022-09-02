@@ -4,12 +4,29 @@ export default class UI {
     list.innerHTML = '';
   }
 
-  static refreashBoard(game) {
+  static refreashBoard(scoreList) {
+    scoreList.forEach((s, index) => {
     const list = document.querySelector('.score-list');
     const li = document.createElement('li');
-    li.innerHTML = `${game.user}: ${game.score}`;
+
+    const rank = document.createElement('span');
+    rank.classList.add('rank');
+    const score = document.createElement('span');
+    score.classList.add('score');
+    const player = document.createElement('span');
+    player.classList.add('player');
+
+    rank.innerHTML = index+1;
+    score.innerHTML = `${s.score}`;
+    player.innerHTML = index === 0 ? `${s.user} <i class="fas fa-trophy"></i>`:`${s.user}`;
+    //li.innerHTML = `${s.user}: ${s.score}`;
+    li.appendChild(rank);
+    li.appendChild(player);
+    li.appendChild(score);
+
     list.appendChild(li);
-  }
+  } );  
+}
 
   // get user and score from the UI
   getUser() {
