@@ -22,7 +22,7 @@ refresh.addEventListener('click', () => {
   const fetchedData = newGame.fetchData(url);
   UI.resetBoard();
   fetchedData.then((result) => {
-    const sortedList = newGame.sortLeaders(Array.from(result));
+    const sortedList = Game.sortLeaders(Array.from(result));
     UI.refreashBoard(sortedList);
   });
 });
@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
   const fetchedData = newGame.fetchData(url);
   UI.resetBoard();
   fetchedData.then((result) => {
-    const sortedList = newGame.sortLeaders(Array.from(result));
+    const sortedList = Game.sortLeaders(Array.from(result));
     UI.refreashBoard(sortedList);
   });
 });
