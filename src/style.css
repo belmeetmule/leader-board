@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #f7f8f8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +13,7 @@ body {
 }
 
 header,
-main { 
+main {
   width: 80%;
   min-width: 375px;
 }
@@ -42,9 +41,6 @@ header {
   justify-content: space-between;
   white-space: nowrap;
 }
-.add-score{
-  white-space: wrap;
-}
 
 input {
   margin: 10px;
@@ -58,10 +54,11 @@ input {
 }
 
 h1,
-h2{
+h2 {
   color: blueviolet;
 }
-h1{
+
+h1 {
   text-align: center;
 }
 
@@ -88,16 +85,16 @@ ul {
   height: 35px;
   padding: 10px;
   display: flex;
-  gap: 30px;
+  gap: 15px;
   align-items: center;
 }
 
-li > span:first-child{
-  flex: 1 1 1;
+li > span:first-child {
+  flex: 1 1 auto;
 }
 
-li > span:last-child{
-  flex: 2 1 auto;
+li > span:last-child {
+  flex: 20 1 auto;
   text-align: right;
 }
 
@@ -106,7 +103,7 @@ li:nth-of-type(even) {
   color: #f7f8f8;
 }
 
-.fa-trophy{
+.fa-trophy {
   color: blueviolet;
 }
 
@@ -121,14 +118,14 @@ li:nth-of-type(even) {
     margin-top: 35px;
     margin-left: 50px;
   }
-  h1{
+
+  h1 {
     text-align: left;
   }
-  button.submit{
+
+  button.submit {
     margin-left: 0%;
     float: right;
     transform: translate(0%);
   }
-
-  
 }
